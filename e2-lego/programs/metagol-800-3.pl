@@ -1,0 +1,24 @@
+% time:12050.761980295181
+t8(A,B):-place1(A,C),t8_1(C,B).
+t8_1(A,B):-right(A,C),place1(C,B).
+t492(A,B):-right(A,C),t492_1(C,B).
+t492_1(A,B):-right(A,C),place1(C,B).
+t542(A,B):-right(A,C),t542_1(C,B).
+t542_1(A,B):-place1(A,C),place1(C,B).
+t151(A,B):-right(A,C),t151_1(C,B).
+t151_1(A,B):-place1(A,C),place1(C,B).
+t203(A,B):-t203_1(A,C),t203_1(C,B).
+t203_1(A,B):-place1(A,C),t203_2(C,B).
+t203_2(A,B):-place1(A,C),right(C,B).
+t234(A,B):-place1(A,C),t234_1(C,B).
+t234_1(A,B):-right(A,C),t234_2(C,B).
+t234_2(A,B):-place1(A,C),place1(C,B).
+t250(A,B):-place1(A,C),t250_1(C,B).
+t250_1(A,B):-at_end(A),place1(A,B).
+t250_1(A,B):-right(A,C),t250_1(C,B).
+t16(A,B):-t16_1(A,C),t16_1(C,B).
+t16_1(A,B):-t16_2(A,C),t16_2(C,B).
+t16_2(A,B):-place1(A,C),right(C,B).
+t387(A,B):-place1(A,C),t387_1(C,B).
+t387_1(A,B):-t387_2(A,C),t387_2(C,B).
+t387_2(A,B):-right(A,C),place1(C,B).
